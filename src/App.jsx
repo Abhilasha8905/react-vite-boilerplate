@@ -1,25 +1,27 @@
 import './App.css'
 
-import reactLogo from './assets/react.svg'
-
 function App () {
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <main className="main">
+        <header>
+          <title>Thank you for visiting Reasonlabs</title>
+          <meta
+            name="description"
+            content="Thank you for downloading RAV Endpoint Protection."
+          />
+          <meta name="robots" content="noindex, nofollow" />
+        </header>
+        <div className="thankyou-epp">
+          <h1>Thank you for visiting Reasonlabs</h1>
+          <img
+            alt="logo"
+            src={'https://cdn.reasonsecurity.com/images/reason-labs-logo.svg'}
+            width={220}
+            height={38}
+          />
+        </div>
+      </main>
     </div>
   )
 }

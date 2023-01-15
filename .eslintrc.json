@@ -2,6 +2,7 @@
   "root": true,
   "extends": ["@quitsmx", "@quitsmx/eslint-config/react"],
   "ignorePatterns": ["/dist", "/patches"],
+  
   "overrides": [
     {
       "files": ["bin/**/*"],
@@ -17,7 +18,9 @@
     {
       "files": ["rollup.config.js", "scripts/**/*.ts"],
       "rules": {
-        "node/no-unsupported-features/es-syntax": ["error", { "ignores": ["modules"] }]
+        "node/no-unsupported-features/es-syntax": ["error", {   
+        "version": ">=8.0.0",
+        "ignores": ["modules"] }]
       }
     }
   ]
